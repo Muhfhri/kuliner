@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background: #e2e2e2;
+  margin: 0;
+}
+
+.quotes {
+  position: relative;
+  height: 25em;
+}
+
+#typing-effect {
+  color: rgb(0, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 800;
+}
+
+div,
+nav {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: rgb(255, 148, 87);
+}
+
+.nav-link {
+  font: 100;
+  transition: font-weight 0.3s;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.sidebar a.active,
+.navbar-nav .nav-link.active {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.card {
+  color: black !important;
+}
+
+.cascadia {
+  font-family: "Cascadia Code", monospace !important;
+}
+
+.product-sans {
+  font-family: "Product Sans", monospace !important;
+}
+
+/* .jumbotron {
+  filter: blur(8px);
+} */
+.typing-container {
+  position: relative;
+  height: 5em;
+  overflow: hidden;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.instagram-button {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-size: 300% 300%;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  animation: gradientMove 5s infinite linear;
+}
+
+.instagram-button:hover {
+  box-shadow: 0 0 20px rgba(220, 39, 67, 0.8);
+  transform: scale(1.1);
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif !important;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 22px;
+  background-color: #f1f1f1;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 9px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  color: #5e5d5d;
+}
+
+.sidebar {
+  position: fixed;
+  /* Menempatkan sidebar tetap di posisi atas */
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+  /* Agar sidebar berada di atas elemen lain */
+}
+
+.sidebar ul {
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  pointer-events: auto;
+  transition: font-weight 0.5s;
+}
+
+.sidebar ul li a:hover {
+  font-weight: bold;
+}
+
+.menu-section {
+  background-color: #113152;
+  padding: 40px 0;
+}
+
+
+/* TODO Responsive CSS by Nabil */
+@media screen and (max-width: 580px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .jumbotron {
+    width: auto;
+  }
+
+  .col-12.col-sm-6.col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.full-bg {
+  background: url('https://www.kassland.com/wp-content/uploads/2024/03/92-min-1024x768-1.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  /* Layar penuh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.full-bg::before {
+  content: "";
+  position: absolute;
+  filter: blur(8px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  filter: blur(5px);
+
+}
+
+.full-bg * {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+.poster-card {
+  width: 220px;
+  height: 320px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, opacity 0.5s;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Posisi Kartu */
+.poster-card.left {
+  left: -40px;
+  z-index: 1;
+  transform: scale(0.85);
+  opacity: 0.6;
+}
+
+.poster-card.center {
+  z-index: 3;
+  transform: scale(1);
+}
+
+.poster-card.right {
+  right: -40px;
+  z-index: 1;
+  transform: scale(0.85);
+  opacity: 0.6;
+}
+
+/* Hover Effect */
+.poster-card:hover {
+  transform: scale(1.05);
+  z-index: 4;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+  .poster-card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+}
+
+.text-content {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  max-width: 500px;
+}
+
+/* keyframe */
+/* @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+/* ambatukammmmm */

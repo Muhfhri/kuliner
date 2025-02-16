@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kedai Kehidupan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+
+<body>
+
+  <div class="sidebar p-3 d-none d-md-block d-md-flex flex-column justify-content-center">
+    <!-- Sidebar hanya muncul di desktop (md dan lebih besar) -->
+    <ul class="list-unstyled text-white">
+      <li><a href="#tentang" class="btn btn-warning rounded-pill active">Tentang</a></li>
+      <li><a href="#menu" class="btn btn-warning rounded-pill">Menu</a></li>
+      <li><a href="#pesan" class="btn btn-warning rounded-pill">Pesan</a></li>
+      <li><a href="https://wa.me/6285179881805?" class="btn btn-success rounded-pill"><iconify-icon icon="mdi:whatsapp" inline></iconify-icon>
+          Hubungi </a></li>
+    </ul>
+  </div>
+
+  <nav class="navbar d-md-none rounded-pill mb-1 ms-4 me-4 navbar-expand fixed-bottom">
+    <ul class="navbar-nav nav-justified w-100">
+      <li class="nav-item tentang">
+        <a href="#tentang" class="nav-link active">Tentang</a>
+      </li>
+      <li class="nav-item menu">
+        <a href="#menu" class="nav-link">Menu</a>
+      </li>
+      <li class="nav-item pesan">
+        <a href="#pesan" class="nav-link">Pesan</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="jumbotron">
+    <div class="full-bg">
+      <div class="container text-center" id="tentang">
+        <section id="tentang">
+
+          <div class="container">   
+            <h3>Kuliner Kehidupan</h3>
+            <div class="content">
+              <!-- Poster -->
+              <div class="card-container">
+                  <div class="poster-card left" id="card1"></div>
+                  <div class="poster-card center" id="card2"></div>
+                  <div class="poster-card right" id="card3"></div>
+              </div>
+      
+              <!-- Teks -->
+              <p class="text-white mt-2">
+                Kedai Kehidupan adalah tempat yang menghadirkan cita rasa autentik Jawa Barat melalui beragam hidangan khas yang lezat dan menggugah selera. Didirikan pada 1 Februari 2025, kedai ini menjadi tempat bagi siapa saja yang ingin menikmati kehangatan masakan tradisional dengan sentuhan khas Sunda dalam suasana yang nyaman dan penuh keakraban. Dengan bahan-bahan pilihan dan resep turun-temurun, Kedai Kehidupan siap membawa Anda dalam perjalanan rasa yang istimewa.
+              </p>
+
+              <a href="https://www.instagram.com/kedaikehidupan" class="instagram-button">Instagram</a>
+          </div>
+        </div>
+      </section>
+      <!-- </div>
+    <h5>Menu makanan favorit dan terlaris</h5>
+    <div class="row">
+      <div class="col-md-4"><button class="btn btn-outline-light rounded-5" type="button"
+          data-bs-toggle="collapse" data-bs-target="#papeda" aria-expanded="false" aria-controls="papeda">
+          Seblak Papeda
+        </button>
+        <div class="collapse mt-2" id="papeda">
+          <div class="card card-body rounded-5">
+            Papeda, makanan khas Papua yang kenyal dan gurih, dipadukan dengan kuah seblak khas Bandung yang pedas,
+            asam, dan lezat, menciptakan sensasi rasa yang unik dan menggugah selera. Kombinasi tekstur papeda yang
+            lembut dengan kekayaan bumbu seblak yang tajam dari Bandung memberikan pengalaman kuliner yang tak
+            terlupakan, menggabungkan kekayaan dua budaya kuliner yang berbeda dalam satu hidangan.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-2"><button class="btn btn-outline-light rounded-5" type="button"
+          data-bs-toggle="collapse" data-bs-target="#cilok" aria-expanded="false" aria-controls="cilok">
+          Cilok
+        </button>
+        <div class="collapse mt-2" id="cilok">
+          <div class="card card-body rounded-5">
+            Cilok khas Bandung yang kenyal dan lezat, disajikan dengan kuah seblak pedas yang menggugah selera,
+            menciptakan kombinasi rasa yang sempurna. Setiap gigitan cilok yang empuk berpadu dengan kuah seblak yang
+            kaya bumbu, memberikan sensasi pedas dan gurih yang memanjakan lidah, menjadikannya jajanan yang tak boleh
+            dilewatkan.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-2"><button class="btn btn-outline-light rounded-5" type="button"
+          data-bs-toggle="collapse" data-bs-target="#lilin" aria-expanded="false" aria-controls="lilin">
+          Es Lilin
+        </button>
+        <div class="collapse mt-2" id="lilin">
+          <div class="card card-body rounded-5">
+            Es lilin, jajanan manis yang segar dan menyegarkan, berasal dari berbagai daerah di Indonesia, namun
+            sangat
+            populer di Jawa. Terbuat dari campuran susu, buah, atau sirup yang dibekukan dalam bentuk stik, es lilin
+            menjadi pilihan favorit di hari yang panas. Rasanya yang manis, teksturnya yang lembut, dan pilihan
+            berbagai
+            rasa membuat es lilin menjadi camilan yang selalu dinanti.
+          </div>
+        </div>
+      </div>
+    </div> -->
+      </div>
+    </div>
+
+
+    <section class="menu-section py-4" id="menu">
+      <div class="container"><br>
+        <h3 class="text-center mb-5 text-white">Menu Makanan Favorit dan Terlaris</h3>
+        <div class="row justify-content-center">
+
+          <div class="col-md-4 mb-3 text-center">
+            <img src="image\seblak-papeda.jpg" alt="Seblak Papeda" class="img-fluid rounded-5 mb-2"
+              style="width: 100%; max-height: 200px; object-fit: cover;">
+            <button class="btn btn-outline-light rounded-5 w-100" type="button" data-bs-toggle="collapse"
+              data-bs-target="#papeda" aria-expanded="false" aria-controls="papeda">
+              Seblak Papeda
+            </button>
+            <div class="collapse mt-2" id="papeda">
+              <div class="card card-body rounded-5">
+                Papeda, makanan khas Papua yang kenyal dan gurih, dipadukan dengan kuah seblak khas Bandung yang pedas,
+                menciptakan sensasi rasa yang unik.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 text-center">
+            <img src="image\cilok.jpg" alt="Cilok" class="img-fluid rounded-5 mb-2"
+              style="width: 100%; max-height: 200px; object-fit: cover;">
+            <button class="btn btn-outline-light rounded-5 w-100" type="button" data-bs-toggle="collapse"
+              data-bs-target="#cilok" aria-expanded="false" aria-controls="cilok">
+              Cilok
+            </button>
+            <div class="collapse mt-2" id="cilok">
+              <div class="card card-body rounded-5">
+                Cilok khas Bandung yang kenyal dan lezat, disajikan dengan kuah seblak pedas yang menggugah selera.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 text-center">
+            <img src="image\es-lilin.jpg" alt="Es Lilin" class="img-fluid rounded-5 mb-2"
+              style="width: 100%; max-height: 200px; object-fit: cover;">
+            <button class="btn btn-outline-light rounded-5 w-100" type="button" data-bs-toggle="collapse"
+              data-bs-target="#lilin" aria-expanded="false" aria-controls="lilin">
+              Es Lilin
+            </button>
+            <div class="collapse mt-2" id="lilin">
+              <div class="card card-body rounded-5">
+                Es lilin, jajanan manis yang segar dan menyegarkan, dibuat dari susu, buah, atau sirup yang dibekukan
+                dalam bentuk stik.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#113152" fill-opacity="1"
+        d="M0,160L30,186.7C60,213,120,267,180,261.3C240,256,300,192,360,160C420,128,480,128,540,117.3C600,107,660,85,720,96C780,107,840,149,900,154.7C960,160,1020,128,1080,133.3C1140,139,1200,181,1260,202.7C1320,224,1380,224,1410,224L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+      </path>
+    </svg>
+
+
+    <section class="pesan-section" id="pesan">
+      <div class="container"><br>
+        <h3 class="text-center mb-5 text-dark">Pesan disini</h3>
+        <div class="container mt-5">
+          <div class="row">
+            <!-- Gambar Produk & Slider -->
+            <div class="col-md-6">
+              <div class="card rounded-5 mb-2 p-3">
+                <div class="product-image">
+                  <img id="productImg" src="image/seblak-papeda.jpg" alt="Seblak Papeda">
+                </div>
+                <!-- Tombol Navigasi -->
+                <div class="slider-buttons">
+                  <button id="prevBtn" class="btn btn-outline-secondary rounded-pill"><iconify-icon
+                      icon="line-md:arrow-left" inline></iconify-icon></button>
+                  <button id="nextBtn" class="btn btn-outline-secondary rounded-pill"><iconify-icon
+                      icon="line-md:arrow-right" inline></iconify-icon></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Informasi Produk -->
+            <div class="col-md-6">
+              <div class="card p-3 rounded-5">
+                  <h3 id="productName">Seblak Papeda</h3>
+                  <p id="productDescription">Makanan khas Papua dengan kuah seblak pedas khas Bandung.</p>
+                  <h4 class="text-danger" id="productPrice">Rp 5.000</h4>
+                  <p id="productDetails">Papeda kenyal berpadu dengan kuah seblak pedas yang menggugah selera.</p>
+                  <a id="whatsappLink" href="https://wa.me/6285179881805?text=Halo%2C%20saya%20ingin%20memesan%20Seblak%20Papeda%20di%20Kedai%20Kehidupan." target="_blank">
+                      <button class="whatsapp-button btn btn-outline-success rounded-pill"><iconify-icon icon="fluent:cart-16-regular" inline></iconify-icon> Pesan Sekarang</button>
+                  </a>
+              </div>
+          </div>
+          
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="typing-container mt-3 mb-3">
+      <center>
+        <h3 class="text" id="typing-effect"></h3>
+      </center>
+    </div>
+
+    <script>
+     $(document).ready(function () {
+    const products = [
+        {
+            img: "image/seblak-papeda.jpg",
+            name: "Seblak Papeda",
+            description: "Makanan khas Papua dengan kuah seblak pedas khas Bandung.",
+            price: "Rp 5.000",
+            details: "Papeda kenyal berpadu dengan kuah seblak pedas yang menggugah selera.",
+            waLink: "https://wa.me/6285179881805?text=Halo%2C%20saya%20ingin%20memesan%20Seblak%20Papeda%20di%20Kedai%20Kehidupan."
+        },
+        {
+            img: "image/cilok.jpg",
+            name: "Cilok",
+            description: "Cilok Bandung dengan kuah seblak pedas yang menggoda.",
+            price: "Rp 5.000",
+            details: "Cilok kenyal dengan kuah seblak yang kaya rasa.",
+            waLink: "https://wa.me/6285179881805?text=Halo%2C%20saya%20ingin%20memesan%20Cilok%20di%20Kedai%20Kehidupan."
+        },
+        {
+            img: "image/es-lilin.jpg",
+            name: "Es Lilin",
+            description: "Es lilin manis dengan berbagai varian rasa segar.",
+            price: "Rp 1.000",
+            details: "Dinginnya es lilin dengan rasa buah yang menyegarkan.",
+            waLink: "https://wa.me/6285179881805?text=Halo%2C%20saya%20ingin%20memesan%20Es%20Lilin%20di%20Kedai%20Kehidupan."
+        }
+    ];
+
+    let currentIndex = 0;
+
+    function updateProduct(index) {
+        $("#productImg").fadeOut(200, function () {
+            $(this).attr("src", products[index].img).fadeIn(200);
+        });
+        $("#productName").text(products[index].name);
+        $("#productDescription").text(products[index].description);
+        $("#productPrice").text(products[index].price);
+        $("#productDetails").text(products[index].details);
+        $("#whatsappLink").attr("href", products[index].waLink); // Update link WhatsApp
+    }
+
+    $("#prevBtn").click(function () {
+        currentIndex = (currentIndex - 1 + products.length) % products.length;
+        updateProduct(currentIndex);
+    });
+
+    $("#nextBtn").click(function () {
+        currentIndex = (currentIndex + 1) % products.length;
+        updateProduct(currentIndex);
+    });
+
+    // Load first product on page load
+    updateProduct(currentIndex);
+});
+
+    </script>
+
+    <section class="footer">
+      <div class="container">
+        <center>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1385.1701202025044!2d106.93844316264627!3d-6.220537842069021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c98e35fcc55%3A0xfdfbea3405c18567!2sSMK%20Nurul%20Islam!5e0!3m2!1sid!2sid!4v1739720100359!5m2!1sid!2sid" class="rounded-5" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </center>
+      </div>
+
+      <div class="container text-center p-5">
+        
+        <h5 class="manrope mt-5">Using Bootstrap 5.3.0</h5>
+        <h4 class="manrope">Created by <img src="image/light.gif" width="140px" alt=""> & NBLz</h4>
+        <h5 class="manrope">Kedai Kehidupan  &copy; 2025</h5>
+      </div>
+    </section>
+
+    <div class="fixed-bottom m-3 ml-2 d-md-none d-flex" style="bottom: 55px; width: 100vw">
+      <a class="btn btn-success rounded-pill" href="https://wa.me/6285179881805?"><iconify-icon
+          icon="mdi:whatsapp" inline></iconify-icon> Hubungi</a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="script/typing.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/trigger.js"></script>
+
+    <script>
+      const folderPath = "image/"; // Path folder tempat gambar disimpan
+      const imageList = ["cilok2.jpg", "es-lilin2.jpg", "seblak-papeda2.jpg", "poster.jpg", "jones.jpg", "berdua.jpg"]; // Daftar gambar di folder
+
+      let cardElements = [document.getElementById("card1"), document.getElementById("card2"), document.getElementById("card3")];
+      let currentIndexes = [0, 1, 2]; // Index awal untuk setiap kartu
+
+      function changeImage(cardIndex) {
+        let card = cardElements[cardIndex];
+        let currentIndex = currentIndexes[cardIndex];
+
+        // Fade out sebelum mengganti gambar
+        card.style.opacity = "0";
+
+        setTimeout(() => {
+          card.style.backgroundImage = `url('${folderPath}${imageList[currentIndex]}')`;
+          card.style.opacity = "1";
+          currentIndexes[cardIndex] = (currentIndex + 1) % imageList.length; // Loop ke gambar berikutnya
+        }, 500); // Waktu sinkronisasi fade-out dan perubahan gambar
+      }
+
+      function startImageRotation() {
+        return setInterval(() => {
+          changeImage(0);
+          setTimeout(() => changeImage(1), 500); // Delay agar tidak berganti bersamaan
+          setTimeout(() => changeImage(2), 1000);
+        }, 3000); // Interval perubahan gambar
+      }
+
+      let imageRotation = startImageRotation();
+
+      // Hover menjeda rotasi gambar
+      cardElements.forEach((card, index) => {
+        card.addEventListener("mouseenter", () => clearInterval(imageRotation));
+        card.addEventListener("mouseleave", () => imageRotation = startImageRotation());
+      });
+
+      // Set gambar awal
+      cardElements.forEach((card, index) => {
+        card.style.backgroundImage = `url('${folderPath}${imageList[currentIndexes[index]]}')`;
+      });
+    </script>
+</body>
+
+</html>
